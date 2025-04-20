@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Artifact 2 - Authentication System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Artifact 2: Authentication System</h1>
+    <p>Category: Algorithms and Data Structures</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>This Java-based authentication system was created in IT-145 and demonstrates role-based access control and user credential validation.</p>
+    </section>
+
+    <section>
+      <h2>Enhancements</h2>
+      <ul>
+        <li>Implemented a role-based monitoring menu after login.</li>
+        <li>Replaced MD5 with SHA-256 for password hashing.</li>
+        <li>Refactored data storage using HashMaps for faster lookups.</li>
+        <li>Introduced enums to manage user roles more efficiently.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills Demonstrated</h2>
+      <p>Java, security hashing, data structures, enums, access control, system logic design.</p>
+    </section>
+
+    <h3>Code Files</h3>
+<ul>
+  <li><a href="artifact2/original/AuthenticationSystem.java" target="_blank">Original AuthenticationSystem.java</a></li>
+  <li><a href="artifact2/original/userCredentials.java" target="_blank">Original userCredentials.java</a></li>
+  <li><a href="artifact2/enhanced/Enhancement_Two_AuthenticationSystem.java" target="_blank">Enhanced AuthenticationSystem.java</a></li>
+  <li><a href="artifact2/enhanced/Enhancement_Two_UserCredentials.java" target="_blank">Enhanced userCredentials.java</a></li>
+</ul>
+
+<h3>Highlighted Code Improvement</h3>
+<pre><code>
+// Replaced MD5 with SHA-256
+MessageDigest md = MessageDigest.getInstance("SHA-256");
+md.update(original.getBytes());
+byte[] digest = md.digest();
+</code></pre>
+
+    <a href="index.html">← Back to Home</a>
+  </main>
+
+  <footer>
+    <p>© 2025 Brandon Barrett</p>
+  </footer>
+</body>
+</html>
