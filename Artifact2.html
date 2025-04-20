@@ -32,6 +32,23 @@
       <p>Java, security hashing, data structures, enums, access control, system logic design.</p>
     </section>
 
+    <section>
+        <h2>Narrative</h2>
+        <p>For the Algorithms and Data Structures category, I selected my Authentication System, originally developed in Java for the IT-145 course. This project was a great fit for enhancement because it already involved important algorithmic concepts like user validation and data lookups, but had room for improvement in both security and performance. The original system used basic ArrayLists and MD5 hashing, which were functional but not optimal for real-world applications.</p>
+      
+        <p>The first enhancement I made was implementing a role-based monitoring system that becomes available after a successful login. Depending on the user's role (Admin, Zookeeper, or Veterinarian), the system presents different options such as “Monitor Animals” or “Monitor Habitats.” This feature added logic flow and control structures that demonstrate how algorithms can adapt based on user input and permissions, while also improving the overall user experience.</p>
+      
+        <p>Next, I replaced the multiple ArrayLists used to store credentials with a <code>HashMap</code> that maps usernames to a custom <code>User</code> object containing the hashed password and user role. This change significantly improved the efficiency of the lookup process, reducing the time complexity from linear to constant time in most cases. It also simplified the code by consolidating related data into a single data structure.</p>
+      
+        <p>For the third enhancement, I upgraded the security of the system by switching from MD5 to SHA-256 hashing. This required updating the hashing logic in the <code>userCredentials</code> class and provided a much stronger encryption standard, which is more suitable for modern applications. It also demonstrated my understanding of how cryptographic hash functions work and why they matter in authentication systems.</p>
+      
+        <p>Finally, I improved role-based access control by implementing a Java <code>enum</code> (<code>UserRole</code>) to define and manage user roles. This approach is more scalable and type-safe compared to using plain strings, and it makes the code easier to maintain and extend in the future.</p>
+      
+        <p>Overall, these enhancements helped transform a simple authentication script into a more realistic, efficient, and secure system. They demonstrate my ability to apply data structures, control logic, and algorithmic thinking to improve software quality—key skills in the field of software engineering.</p>
+      
+        <p><strong>Reflection:</strong> Through this process, I became more confident in applying data structures like HashMaps and using enums to improve logic flow and type safety. A major challenge was restructuring the credential system to use a custom object without breaking the authentication logic. Debugging and testing this section helped sharpen my problem-solving skills. Switching to SHA-256 also deepened my understanding of cryptographic security. These enhancements align closely with course outcomes related to applying algorithmic thinking, optimizing data storage, and improving the security and scalability of a software system.</p>
+      </section>
+
     <h3>Code Files</h3>
 <ul>
   <li><a href="artifact2/original/AuthenticationSystem.java" target="_blank">Original AuthenticationSystem.java</a></li>
