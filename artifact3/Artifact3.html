@@ -32,6 +32,23 @@
       <p>Dash, Python, MongoDB, data visualization, environment security, application performance optimization.</p>
     </section>
 
+    <section>
+        <h2>Narrative</h2>
+        <p>For the database category, I chose to enhance my animal shelter dashboard project, originally built using Python, Dash, and MongoDB in CS-340. This artifact was a great fit because it demonstrated how to connect a frontend dashboard to a backend NoSQL database to display and interact with real data. While the original project met the functional requirements, I saw several opportunities to improve it in terms of security, performance, and user experience.</p>
+      
+        <p>The first major enhancement I made was securing the database credentials. The original code had the MongoDB username and password hardcoded directly into the script. I refactored the project to use a <code>.env</code> file and the <code>python-dotenv</code> package to load sensitive information securely as environment variables. This not only improved the safety of my application but also made it easier to manage credentials across different environments, such as local development and cloud deployment.</p>
+      
+        <p>Next, I improved the efficiency of the database queries. I used the <code>functools.lru_cache</code> decorator to cache query results in memory, which reduced the number of duplicate calls made to the database when switching filters. Additionally, I added a <code>dcc.Store</code> component in the Dash app to hold query results, further minimizing unnecessary refreshes and speeding up the overall performance of the dashboard.</p>
+      
+        <p>I also focused on enhancing error handling. One issue with the original version was that the app would break or behave unpredictably if no records matched a filter. I updated the app to display a friendly message like “No matching records found” and added checks to prevent data type mismatches, especially in the graph and map components. These changes made the application more robust and user-friendly.</p>
+      
+        <p>Finally, I cleaned up the <code>animal_shelter.py</code> CRUD class to support secure, environment-based configuration and added exception handling for failed connections. These backend improvements supported the frontend enhancements and contributed to a more maintainable and scalable application.</p>
+      
+        <p>Overall, this artifact shows my ability to work with databases in a full-stack application, use environment variables for security, implement caching and state management for performance, and build user-friendly dashboards with data visualizations. It reflects the practical database and software engineering skills I have developed throughout the Computer Science program.</p>
+      
+        <p><strong>Reflection:</strong> This enhancement process taught me how to balance security and usability in a live data dashboard. One of the challenges I faced was maintaining proper data flow between the backend and the Dash interface without overloading the database. I also had to troubleshoot errors that occurred when the map component received invalid coordinates, which helped me improve my debugging skills. These updates demonstrate course outcomes related to database integration, backend security, and building responsive, real-world applications that handle dynamic data effectively.</p>
+      </section>
+
     <h3>Code Files</h3>
 <ul>
   <li><a href="artifact3/original/ProjectTwoDashboard.ipynb" target="_blank">Original ProjectTwoDashboard.ipynb</a></li>
