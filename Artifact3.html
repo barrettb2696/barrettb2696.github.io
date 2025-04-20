@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Artifact 3 - Database Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Artifact 3: Animal Shelter Dashboard</h1>
+    <p>Category: Databases</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>This project, created in CS-340, is a web application that interacts with a MongoDB database using Dash and Python.</p>
+    </section>
+
+    <section>
+      <h2>Enhancements</h2>
+      <ul>
+        <li>Secured database credentials using environment variables.</li>
+        <li>Added caching (lru_cache) to reduce redundant queries.</li>
+        <li>Used Dash's <code>dcc.Store</code> to prevent unnecessary refreshes.</li>
+        <li>Improved error handling and type safety to prevent crashes.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills Demonstrated</h2>
+      <p>Dash, Python, MongoDB, data visualization, environment security, application performance optimization.</p>
+    </section>
+
+    <h3>Code Files</h3>
+<ul>
+  <li><a href="artifact3/original/ProjectTwoDashboard.ipynb" target="_blank">Original ProjectTwoDashboard.ipynb</a></li>
+  <li><a href="artifact3/enhanced/Enhancement_3.ipynb" target="_blank">Enhanced ProjectTwoDashboard.ipynb</a></li>
+</ul>
+
+<h3>Highlighted Code Improvement</h3>
+<pre><code># Secured credentials using environment variables
+from dotenv import load_dotenv
+load_dotenv()
+username = os.getenv("MONGO_USERNAME")
+password = os.getenv("MONGO_PASSWORD")
+</code></pre>
+
+    <a href="index.html">← Back to Home</a>
+  </main>
+
+  <footer>
+    <p>© 2025 Brandon Barrett</p>
+  </footer>
+</body>
+</html>
